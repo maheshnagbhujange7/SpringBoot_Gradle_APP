@@ -15,11 +15,13 @@ public class BootApplication {
 		SpringApplication.run(BootApplication.class, args);
 	}
 	
-	@GetMapping("/")
+        //bug 120
+	@GetMapping("/welcome")
 	public String getWelcomeMsg() {
 		return "Welcome to Ashok IT - Software Training";
 	}
 
+       //bug (103)
         @GetMapping("/Greet")
 	public String getWelcomeMsg() {
 		//in progress
