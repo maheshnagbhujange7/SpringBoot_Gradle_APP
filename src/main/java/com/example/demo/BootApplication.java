@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class BootApplication {
 
 	public static void main(String[] args) {
-		
-		
+		//bug = 100
+		int a= 10;
+                int b= 20;
 		SpringApplication.run(BootApplication.class, args);
 	}
 	
@@ -21,10 +22,11 @@ public class BootApplication {
 		return "Welcome to Ashok IT - Software Training";
 	}
 
-      
+      //bug(103)
         @GetMapping("/Greet")
 	public String getWelcomeMsg() {
-		
+		//in progress
+
 	}
 
 }
